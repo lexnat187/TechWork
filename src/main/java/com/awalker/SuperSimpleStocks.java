@@ -88,7 +88,7 @@ public class SuperSimpleStocks {
     }
 
     private File copyResourceOutofJARtoTEMP(String sFileName, String sFileExtension) throws IOException {
-        InputStream input = getClass().getResourceAsStream("/com/awalker/csv/" + sFileName + sFileExtension);
+        InputStream input = getClass().getResourceAsStream("/com/awalker/data/" + sFileName + sFileExtension);
         File file = File.createTempFile(sFileName, sFileExtension);
         File actualFile = new File(file.getParent() + "/" + sFileName + sFileExtension);
 

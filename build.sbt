@@ -12,7 +12,7 @@ publishMavenStyle := true
 
 //autoScalaLibrary := false
 
-mainClass in Compile := Some("")
+mainClass in Compile := Some("com.awalker.SuperSimpleStocks")
 
 scalacOptions ++= Seq(
   "-target:jvm-1.8",
