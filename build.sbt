@@ -44,3 +44,6 @@ javaOptions ++= Seq("-enableassertions", "-XX:+CMSClassUnloadingEnabled", "-XX:P
 
 // Enable SBT 13.2 incremental compiler optimisations.
 incOptions := incOptions.value.withNameHashing(true)
+
+// skip scala tests during assembly
+test in assembly := {}
